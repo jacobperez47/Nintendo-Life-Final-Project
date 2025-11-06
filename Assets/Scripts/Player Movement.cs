@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     
     private Vector2 movement;
+    
+    public CollectableManager collectableManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +29,15 @@ public class PlayerMovement : MonoBehaviour
     {
         movement = context.ReadValue<Vector2>();
       
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        print("Trigger");
+        if (other.CompareTag("Collectable"))
+        {
+            other.gameObject.SetActive(false);
+            collectableManager.count++;
+        }
     }
 }
