@@ -72,6 +72,23 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    public void ResetMovement()
+    {
+        movement = Vector2.zero; 
+    
+
+        if (rb != null)
+        {
+            rb.velocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
+        isDashing = false;
+       
+        
+        StopAllCoroutines(); 
+        canDash = true;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         print("Trigger");
