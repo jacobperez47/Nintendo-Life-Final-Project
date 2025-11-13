@@ -91,7 +91,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("Trigger");
         if (other.CompareTag("Collectable"))
         {
             other.gameObject.SetActive(false);
