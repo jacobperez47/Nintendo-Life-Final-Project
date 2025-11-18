@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class ConsoleManager : MonoBehaviour
 {
-    private bool alreadyCollected = false;
-
     private SpriteRenderer spriteRenderer;
 
     public Sprite collectedSprite;
+
+    private AudioSource collectionSound;
 
     public int id;
 
@@ -17,6 +17,12 @@ public class ConsoleManager : MonoBehaviour
     void Start()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        if (CollectionTracker.get(1))
+        {
+            spriteRenderer.color = new Color(0, 0.9064064f, 1);
+        }
+
+        collectionSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -26,24 +32,11 @@ public class ConsoleManager : MonoBehaviour
 
     private void OnEnable()
     {
-        if (alreadyCollected)
-        {
-            spriteRenderer.color = new Color(0, 0.9064064f, 1);
-        }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    public void playSound()
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            if (!alreadyCollected)
-            {
-                alreadyCollected = true;
-            }
-
-            print("console found");
-            CollectionTracker.add((id));
-            gameObject.SetActive(false);
-        }
+        collectionSound.Play();
     }
-}
+    
+}   
