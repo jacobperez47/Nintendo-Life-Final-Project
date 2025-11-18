@@ -8,6 +8,8 @@ public class CollectableManager : MonoBehaviour
 {
     public int count = 0;
 
+    public GameObject majorUnlock;
+    
     public TextMeshProUGUI countText;
 
     // Start is called before the first frame update
@@ -19,5 +21,14 @@ public class CollectableManager : MonoBehaviour
     void Update()
     {
         countText.text = "Coin Count: " + count.ToString();
+    }
+
+    public void checkCount()
+    {
+        if (count == 3)
+        {
+            majorUnlock.SetActive(true);
+        }
+        
     }
 }

@@ -98,6 +98,7 @@ public class PlayerMovement : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             collectableManager.count++;
+            collectableManager.checkCount();
         }
 
         if (other.CompareTag("Console"))

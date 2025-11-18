@@ -748,6 +748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: 0
+  majorUnlock: {fileID: 1638000181}
   countText: {fileID: 2033054132}
 --- !u!4 &1557903385
 Transform:
@@ -1413,6 +1414,10 @@ PrefabInstance:
     - target: {fileID: 3832295086841825205, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_Name
       value: Console
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832295086841825205, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8583681934558097220, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_Color.b
