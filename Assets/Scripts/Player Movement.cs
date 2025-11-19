@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private float dashTimer;
     private bool canDash = true;
     private bool isDashing;
-    AudioSource collectionSound;
+    private AudioSource collectionSound;
 
     public CollectableManager collectableManager;
 
@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        collectionSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -103,7 +102,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (other.CompareTag("Console"))
         {
-            collectionSound.Play();
+            collectionSound = other.GetComponent<AudioSource>();
+            AudioClip clip = collectionSound.clip;
+            AudioSource.PlayClipAtPoint(clip, transform.position);
             print("console found");
             ConsoleManager instance = other.GetComponent<ConsoleManager>();
             CollectionTracker.add(instance.id);
