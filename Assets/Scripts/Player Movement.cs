@@ -19,12 +19,15 @@ public class PlayerMovement : MonoBehaviour
     private bool canDash = true;
     private bool isDashing;
     private AudioSource collectionSound;
+    private PlayerInput input;
 
     public CollectableManager collectableManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        input = GetComponent<PlayerInput>();
+        input.enabled = true;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -116,10 +119,16 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(dashTime);
         print("Stop Dashing");
+        input.enabled = false;
         Physics2D.IgnoreLayerCollision(3, 6, false);
 
+
+
         isDashing = false;
+        yield return new WaitForSeconds(0.1f);
+        input.enabled = true;
     }
+
 
     private IEnumerator DashCooldown()
     {
