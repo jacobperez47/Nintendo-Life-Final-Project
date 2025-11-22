@@ -25,7 +25,7 @@ public class CollectableManager : MonoBehaviour
 
     public void checkCount()
     {
-        if (count == 3)
+        if (count >= 4)
         {
             majorUnlock.SetActive(true);
         }

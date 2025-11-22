@@ -126,6 +126,7 @@ public class PlayerMovement : MonoBehaviour
 
         isDashing = false;
         yield return new WaitForSeconds(0.1f);
+        ResetMovement();
         input.enabled = true;
     }
 
