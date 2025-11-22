@@ -78,7 +78,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void ResetMovement()
     {
+        
+        StopAllCoroutines();
         movement = Vector2.zero;
+        isDashing = false;
+        canDash = true;
 
 
         if (rb != null)
@@ -87,11 +91,13 @@ public class PlayerMovement : MonoBehaviour
             rb.angularVelocity = 0f;
         }
 
-        isDashing = false;
+        Physics2D.IgnoreLayerCollision(3, 6, false);
 
 
-        StopAllCoroutines();
-        canDash = true;
+      if (input != null) 
+          {
+              input.enabled = true;
+          }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

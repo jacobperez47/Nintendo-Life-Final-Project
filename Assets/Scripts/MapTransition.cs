@@ -8,6 +8,7 @@ public class MapTransition : MonoBehaviour
     [SerializeField] private PolygonCollider2D mapBoundry;
     CinemachineConfiner2D confiner;
     [SerializeField] private Direction direction;
+    [SerializeField] private Transform movePoint;
 
     enum Direction
     {
@@ -34,24 +35,15 @@ public class MapTransition : MonoBehaviour
 
     private void UpdatePlayerPosition(GameObject player)
     {
-        Vector3 newPosition = player.transform.position;
-
-        switch (direction)
+        PlayerMovement playerScript = player.GetComponent<PlayerMovement>();
+        if (playerScript != null)
         {
-            case Direction.UP:
-                newPosition.y += 2;
-                break;
-            case Direction.DOWN:
-                newPosition.y -= 2;
-                break;
-            case Direction.LEFT:
-                newPosition.x -= 2;
-                break;
-            case Direction.RIGHT:
-                newPosition.x += 2;
-                break;
+            playerScript.ResetMovement();
         }
         
+        Vector3 newPosition = movePoint.position;
+
+   
         player.transform.position = newPosition;
     }
 }
