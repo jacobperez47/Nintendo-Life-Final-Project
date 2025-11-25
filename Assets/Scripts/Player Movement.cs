@@ -78,18 +78,19 @@ public class PlayerMovement : MonoBehaviour
 
     public void ResetMovement()
     {
-        
-        StopAllCoroutines();
         movement = Vector2.zero;
-        isDashing = false;
-        canDash = true;
-
-
         if (rb != null)
         {
             rb.velocity = Vector2.zero;
             rb.angularVelocity = 0f;
         }
+        StopAllCoroutines();
+        
+
+        isDashing = false;
+        canDash = true;
+
+
 
         Physics2D.IgnoreLayerCollision(3, 6, false);
 
