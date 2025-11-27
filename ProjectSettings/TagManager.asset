@@ -7,6 +7,7 @@ TagManager:
   - Collectable
   - Console
   - hazzard
+  - enemy
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Ground
   - Wall
   - room switch
-  - 
+  - enemy
   - 
   - 
   - 

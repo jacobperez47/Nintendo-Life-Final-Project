@@ -10,6 +10,8 @@ public class QuizController : MonoBehaviour
     public TMP_Text questionText;
     public TMP_Text[] answerTexts;
     public MonoBehaviour PlayerMovement;
+    [Header("Player Detection")]
+    public GameObject interactPopup;
 
     private int correctAnswerIndex = 0;
     private int selectedAnswerIndex = 0;
@@ -65,7 +67,7 @@ public class QuizController : MonoBehaviour
             Debug.Log("Quiz has already been answered correctly.");
             return;
         }
-        
+
         quizActive = true;
         gameObject.SetActive(true);
 
@@ -89,6 +91,11 @@ public class QuizController : MonoBehaviour
         updateAnswerUI();
     }
 
+    public void showPopup()
+    {
+        interactPopup.SetActive(true);
+    }
+
     public void hideQuiz()
     {
         quizActive = false;
@@ -97,6 +104,14 @@ public class QuizController : MonoBehaviour
         if(PlayerMovement != null)
         {
             PlayerMovement.enabled = true;
+        }
+    }
+
+    public void hidePopup()
+    {
+        if(interactPopup != null)
+        {
+            interactPopup.SetActive(false);
         }
     }
 

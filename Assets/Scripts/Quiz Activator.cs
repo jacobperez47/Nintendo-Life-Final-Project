@@ -18,6 +18,7 @@ public class QuizActivator : MonoBehaviour
         if(playerInRange && Input.GetKeyDown(KeyCode.E))
         {
             quizController.showQuiz(question, options, correctAnswerIndex);
+            quizController.hidePopup();
         }
     }
     
@@ -27,6 +28,10 @@ public class QuizActivator : MonoBehaviour
         {
             Debug.Log("Player in range");
             playerInRange = true;
+            if (!quizController.answeredCorrectly)
+            {
+                quizController.showPopup();
+            }
         }
     }
 
@@ -36,6 +41,7 @@ public class QuizActivator : MonoBehaviour
         {
             Debug.Log("Player out of range");
             playerInRange = false;
+            quizController.hidePopup();
         }
     }
 }

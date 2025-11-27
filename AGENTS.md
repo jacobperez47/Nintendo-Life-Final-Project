@@ -4,11 +4,11 @@
 - Active scene:
   - Name: Test Level
   - Tags:
-    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, Collectable, Console, hazzard
+    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, Collectable, Console, hazzard, enemy
   - Layers:
-    - Default, TransparentFX, Ignore Raycast, Player, Water, UI, Hazzard, Ground, Wall, room switch
+    - Default, TransparentFX, Ignore Raycast, Player, Water, UI, Hazzard, Ground, Wall, room switch, enemy
 - Active game object:
-  - Name: Interact Popup
-  - Tag: Untagged
+  - Name: CalamariCafeMAIN (3)
+  - Tag: Collectable
   - Layer: Player
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
