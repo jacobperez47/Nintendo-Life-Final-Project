@@ -2344,7 +2344,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.53, y: 0.82, z: -10}
+  m_LocalPosition: {x: 0.53, y: 0.41593182, z: -10}
   m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2450,7 +2450,7 @@ Transform:
   m_GameObject: {fileID: 605036015}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.53, y: 0.82, z: -10}
+  m_LocalPosition: {x: 0.53, y: -1.29, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2578,7 +2578,7 @@ MonoBehaviour:
   - '" option 2"'
   - '"Option3 "'
   - '"Correct"'
-  correctAnswerIndex: 4
+  correctAnswerIndex: 3
   quizController: {fileID: 1615468463}
 --- !u!1 &737204067
 GameObject:
@@ -2910,8 +2910,8 @@ Transform:
   m_GameObject: {fileID: 946019575}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.92, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 178977960}
@@ -2954,10 +2954,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 498578957
-  m_SortingLayer: 1
-  m_SortingOrder: 1
-  m_Sprite: {fileID: -1668267325, guid: 46d12ccdbb23d1c43b2d6a7d34797fee, type: 3}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 20
+  m_Sprite: {fileID: 21300000, guid: 3337668c42b2c6b48aa5f8ab257ce1df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14019,7 +14019,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4529045850811682262, guid: 8778d0c0379130a4e812b258be5d4d01, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.82
+      value: -1.29
       objectReference: {fileID: 0}
     - target: {fileID: 4529045850811682262, guid: 8778d0c0379130a4e812b258be5d4d01, type: 3}
       propertyPath: m_LocalPosition.z
