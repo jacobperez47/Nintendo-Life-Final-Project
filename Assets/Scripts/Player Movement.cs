@@ -52,18 +52,20 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
+        animator.SetBool("isWalking",true);
         if (!isDashing)
         {
 
             if (context.canceled)
             {
+                animator.SetBool("isWalking",false);
                 animator.SetFloat("LastInputX", movement.x);
                 animator.SetFloat("LastInputY", movement.y);
             }
             
             movement = context.ReadValue<Vector2>();
-            animator.SetFloat("LastInputX", movement.x);
-            animator.SetFloat("LastInputY", movement.y);
+            animator.SetFloat("InputX", movement.x);
+            animator.SetFloat("InputY", movement.y);
         }
     }
 
@@ -79,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
             Physics2D.IgnoreLayerCollision(3, 6, true);
             if (_dashDir == Vector2.zero)
             {
-                _dashDir = new Vector2(transform.localScale.x > 0 ? 1 : -1, 0);
+                _dashDir = new Vector2(animator.GetFloat("LastInputX"), animator.GetFloat("LastInputY"));
             }
 
             StartCoroutine(StopDashing());

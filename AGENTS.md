@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Player, Water, UI, Hazzard, Ground, Wall, room switch, enemy
 - Active game object:
-  - Name: Room 2 transition
-  - Tag: Untagged
-  - Layer: Default
+  - Name: NUS-007 64 Expansion Pack
+  - Tag: Collectable
+  - Layer: Player
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
