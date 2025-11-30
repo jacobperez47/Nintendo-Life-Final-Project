@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Player, Water, UI, Hazzard, Ground, Wall, room switch, enemy
 - Active game object:
-  - Name: Ground
-  - Tag: Untagged
-  - Layer: Ground
+  - Name: Player
+  - Tag: Player
+  - Layer: Player
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
