@@ -1,5 +1,5 @@
 <!-- UNITY CODE ASSIST INSTRUCTIONS START -->
-- Project name: temp1
+- Project name: Nintendo-Life
 - Unity version: Unity 2022.3.62f3
 - Active scene:
   - Name: Test Level
@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Player, Water, UI, Hazzard, Ground, Wall, room switch, enemy
 - Active game object:
-  - Name: CalamariCafeMAIN
-  - Tag: Collectable
-  - Layer: Default
+  - Name: Ground
+  - Tag: Untagged
+  - Layer: Ground
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
