@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class PauseMenu : MonoBehaviour
 {
@@ -11,7 +14,8 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pauseMenu.SetActive(false);
+        if (pauseMenu != null)
+            pauseMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -54,5 +58,10 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         Application.Quit();
+
+        // In the Editor Application.Quit() does nothing — stop play mode there for convenience
+    #if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+    #endif
     }
 }
