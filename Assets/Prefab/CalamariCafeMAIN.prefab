@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 369346646602606927}
   - component: {fileID: 4013582428520133796}
   - component: {fileID: 3775075064403309975}
+  - component: {fileID: 7045620805839625134}
   m_Layer: 3
   m_Name: CalamariCafeMAIN
   m_TagString: Collectable
@@ -120,3 +121,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5
+--- !u!114 &7045620805839625134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8157830624193903754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806b39519eb30684583dd2c20a09d497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

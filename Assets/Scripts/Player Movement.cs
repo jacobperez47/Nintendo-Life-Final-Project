@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isDashing;
     private AudioSource collectionSound;
     private PlayerInput input;
+    private Animator animator;
 
     public CollectableManager collectableManager;
 
@@ -29,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
         input = GetComponent<PlayerInput>();
         input.enabled = true;
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -52,7 +54,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isDashing)
         {
+
+            if (context.canceled)
+            {
+                animator.SetFloat("LastInputX", movement.x);
+                animator.SetFloat("LastInputY", movement.y);
+            }
+            
             movement = context.ReadValue<Vector2>();
+            animator.SetFloat("LastInputX", movement.x);
+            animator.SetFloat("LastInputY", movement.y);
         }
     }
 
@@ -106,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Collectable"))
         {
             other.gameObject.SetActive(false);
-            collectableManager.count++;
+            other.GetComponent<Accessory_Script>().isCollected = true;
             collectableManager.checkCount();
         }
 
