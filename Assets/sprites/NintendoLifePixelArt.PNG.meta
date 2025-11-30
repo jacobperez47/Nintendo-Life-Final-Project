@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -226,12 +226,12 @@ TextureImporter:
       name: NintendoLifePixelArt_6
       rect:
         serializedVersion: 2
-        x: 151
+        x: 150
         y: 450
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,216 +239,6 @@ TextureImporter:
       bones: []
       spriteID: a75d50d51a4714cf7bab0cb00796695d
       internalID: 769437488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_10
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 475
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37c288a6a8f6440bf874bd842f3c3f8e
-      internalID: -2138446772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_11
-      rect:
-        serializedVersion: 2
-        x: 275
-        y: 475
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 841510329875e44e7be06ce5cababf36
-      internalID: 835465598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_12
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 475
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 470639bc53b2846f9a85da4cf9feb0c1
-      internalID: -1150294853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_13
-      rect:
-        serializedVersion: 2
-        x: 325
-        y: 475
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 037dc6b8f34574e879de195ad709f858
-      internalID: 998224249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_14
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 475
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cb0bf7a568af41b5a9f241434c23e81
-      internalID: 1467496795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_15
-      rect:
-        serializedVersion: 2
-        x: 375
-        y: 475
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b70ebbbdee8ef4998a606ea9e940f9c7
-      internalID: -19091537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_16
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 475
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31c98e82f26dd4664afd7bc32be003a2
-      internalID: -1438120034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_17
-      rect:
-        serializedVersion: 2
-        x: 425
-        y: 475
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9007e60de02f5452d8de530ae19d22c6
-      internalID: 66448404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_18
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 475
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aac397110a893442aa92aab61ed9ecc7
-      internalID: -1192062447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_19
-      rect:
-        serializedVersion: 2
-        x: 475
-        y: 475
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f10720d424b4b4d1b81f7b71f59f2f39
-      internalID: 1896391233
       vertices: []
       indices: 
       edges: []
@@ -580,97 +370,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NintendoLifePixelArt_30
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 450
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a71a7756ed444452fa521e9fe4144448
-      internalID: 1947037689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_31
-      rect:
-        serializedVersion: 2
-        x: 275
-        y: 450
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad0c8ffe086224fd39b11553707f1cc4
-      internalID: -285864926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_32
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 450
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f6f3b7f1b5cf45ef82975e6f02391c2
-      internalID: -2046318775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_33
-      rect:
-        serializedVersion: 2
-        x: 325
-        y: 450
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86a8620865c454329a15f5b8f54ebcd4
-      internalID: -106091332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: NintendoLifePixelArt_34
       rect:
         serializedVersion: 2
         x: 350
         y: 450
-        width: 25
-        height: 25
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -685,34 +391,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NintendoLifePixelArt_35
-      rect:
-        serializedVersion: 2
-        x: 375
-        y: 450
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51f07490073a842fcb121455843a6e47
-      internalID: -718424619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: NintendoLifePixelArt_36
       rect:
         serializedVersion: 2
         x: 400
         y: 450
-        width: 25
-        height: 25
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -727,34 +412,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NintendoLifePixelArt_37
-      rect:
-        serializedVersion: 2
-        x: 425
-        y: 450
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 516356ec9f30743dab789b4b4bc5fa7c
-      internalID: 887909630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: NintendoLifePixelArt_38
       rect:
         serializedVersion: 2
         x: 450
         y: 450
-        width: 25
-        height: 25
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -764,27 +428,6 @@ TextureImporter:
       bones: []
       spriteID: 8eb22591ee29a4cbdaa406362c5b2793
       internalID: -120844763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_39
-      rect:
-        serializedVersion: 2
-        x: 475
-        y: 450
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2a944ac04a80441999f4d2e69e801cb
-      internalID: 702529485
       vertices: []
       indices: 
       edges: []
@@ -1528,10 +1171,10 @@ TextureImporter:
       name: NintendoLifePixelArt_75
       rect:
         serializedVersion: 2
-        x: 150
-        y: 375
-        width: 25
-        height: 25
+        x: 148
+        y: 348
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1541,195 +1184,6 @@ TextureImporter:
       bones: []
       spriteID: 1edd0f582343b4021a8e687f4fa522f8
       internalID: 595991614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_76
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 375
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a15f9615c3b024909a6ac22c1bc8156a
-      internalID: -1513003262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_77
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 375
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67b6255a490eb41e28f893ee28052193
-      internalID: -922014238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_78
-      rect:
-        serializedVersion: 2
-        x: 275
-        y: 375
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57ad033a6b3e14f538d275c76a5d4d70
-      internalID: -95399010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_79
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 375
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 933cfc11ff0fc46759549710e7b19426
-      internalID: 106105189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_80
-      rect:
-        serializedVersion: 2
-        x: 325
-        y: 375
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6cccc9d82a9134c0fa187dd04c95578c
-      internalID: 1113516979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_81
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 375
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41134d2c38e43463aada208bf72cdbe4
-      internalID: -1114172990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_82
-      rect:
-        serializedVersion: 2
-        x: 375
-        y: 375
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68a06ac82be4340959f49490677d761d
-      internalID: -1407915021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_83
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 375
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed2ab039043a54de3b8836d335656fd9
-      internalID: 972875786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_84
-      rect:
-        serializedVersion: 2
-        x: 475
-        y: 375
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a87aac85bc1644a63949e612ff455eb2
-      internalID: 1043825937
       vertices: []
       indices: 
       edges: []
@@ -1819,55 +1273,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NintendoLifePixelArt_89
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 350
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fbd58a6f40f6947e4b0f3ad89560ee35
-      internalID: -1691759574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_90
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 350
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82d3dd416e2d049769e3f55b9c946e52
-      internalID: -542889143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: NintendoLifePixelArt_91
       rect:
         serializedVersion: 2
         x: 250
         y: 350
-        width: 25
-        height: 25
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1882,34 +1294,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NintendoLifePixelArt_92
-      rect:
-        serializedVersion: 2
-        x: 275
-        y: 350
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfc068809d232498291ca955b0c16cab
-      internalID: -1527291679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: NintendoLifePixelArt_93
       rect:
         serializedVersion: 2
         x: 300
         y: 350
-        width: 25
-        height: 25
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1924,34 +1315,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NintendoLifePixelArt_94
-      rect:
-        serializedVersion: 2
-        x: 325
-        y: 350
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f89db0e1695b44246939dd36e18a34a7
-      internalID: -171053307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: NintendoLifePixelArt_95
       rect:
         serializedVersion: 2
         x: 350
         y: 350
-        width: 25
-        height: 25
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1966,34 +1336,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NintendoLifePixelArt_96
-      rect:
-        serializedVersion: 2
-        x: 375
-        y: 350
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41fc64c85ae4b47d4bed5f4603623198
-      internalID: -1693617163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: NintendoLifePixelArt_97
       rect:
         serializedVersion: 2
         x: 450
         y: 350
-        width: 25
-        height: 25
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2003,27 +1352,6 @@ TextureImporter:
       bones: []
       spriteID: 1043a6a3bcd9c4d6c8c44ebad1cd1477
       internalID: 1037088519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NintendoLifePixelArt_98
-      rect:
-        serializedVersion: 2
-        x: 475
-        y: 350
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dea0d9dffac844d5b9c7c969ca57b384
-      internalID: 919383517
       vertices: []
       indices: 
       edges: []
@@ -3326,6 +2654,69 @@ TextureImporter:
       bones: []
       spriteID: d944a8c7f1701480cb2870c6c8d193d5
       internalID: -491408410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NintendoLifePixelArt_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 453
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7368cad2d0cfbb54faa877b3f65456c5
+      internalID: -1684665026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NintendoLifePixelArt_8
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 450
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913454164668e0e49a8a248e17552615
+      internalID: -1041173045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NintendoLifePixelArt_9
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 450
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bde30b53dad9cb4cae04938e10d3178
+      internalID: 843325142
       vertices: []
       indices: 
       edges: []
