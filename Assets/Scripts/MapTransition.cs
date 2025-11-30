@@ -6,7 +6,7 @@ using UnityEngine;
 public class MapTransition : MonoBehaviour
 {
     [SerializeField] private PolygonCollider2D mapBoundry;
-    CinemachineConfiner2D confiner;
+    CinemachineConfiner confiner;
     [SerializeField] private Direction direction;
     [SerializeField] private Transform movePoint;
     private static bool midTransition = false;
@@ -21,7 +21,7 @@ public class MapTransition : MonoBehaviour
 
     private void Awake()
     {
-        confiner = FindObjectOfType<CinemachineConfiner2D>();
+        confiner = FindObjectOfType<CinemachineConfiner>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -54,7 +54,7 @@ public class MapTransition : MonoBehaviour
             rb.velocity = Vector2.zero;
         }
         confiner.m_BoundingShape2D = mapBoundry;
-        confiner.InvalidateCache();
+        confiner.InvalidatePathCache();
         UpdatePlayerPosition(collision.gameObject);
 
         yield return new WaitForSeconds(.5f);
