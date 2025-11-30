@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Player, Water, UI, Hazzard, Ground, Wall, room switch, enemy
 - Active game object:
-  - Name: NUS-007 64 Expansion Pack
-  - Tag: Collectable
-  - Layer: Player
+  - Name: Square A4 to A3
+  - Tag: Untagged
+  - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
