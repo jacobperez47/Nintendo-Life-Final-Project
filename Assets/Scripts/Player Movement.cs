@@ -54,14 +54,19 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isDashing)
         {
+            Vector2 currentMovement = context.ReadValue<Vector2>();
+            movement = context.ReadValue<Vector2>();
+            animator.SetFloat("LastInputX", movement.x);
+            animator.SetFloat("LastInputY", movement.y);
 
             if (context.canceled)
             {
-                animator.SetFloat("LastInputX", movement.x);
+                if (movement.x != 0 || movement.y != 0)
+                    animator.SetFloat("LastInputX", movement.x);
                 animator.SetFloat("LastInputY", movement.y);
             }
-            
-            movement = context.ReadValue<Vector2>();
+
+            movement = currentMovement;
             animator.SetFloat("LastInputX", movement.x);
             animator.SetFloat("LastInputY", movement.y);
         }
@@ -95,21 +100,21 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = Vector2.zero;
             rb.angularVelocity = 0f;
         }
+
         StopAllCoroutines();
-        
+
 
         isDashing = false;
         canDash = true;
 
 
-
         Physics2D.IgnoreLayerCollision(3, 6, false);
 
 
-      if (input != null) 
-          {
-              input.enabled = true;
-          }
+        if (input != null)
+        {
+            input.enabled = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -137,15 +142,19 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(dashTime);
         print("Stop Dashing");
-        input.enabled = false;
+
+        // 1. End Dashing state
+        isDashing = false;
+
+        // 2. Re-enable collision
         Physics2D.IgnoreLayerCollision(3, 6, false);
 
 
-
-        isDashing = false;
-        yield return new WaitForSeconds(0.1f);
-        ResetMovement();
-        input.enabled = true;
+        if (rb != null)
+        {
+            rb.velocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
     }
 
 
