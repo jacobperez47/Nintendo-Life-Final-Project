@@ -18524,7 +18524,7 @@ GameObject:
   - component: {fileID: 3201386}
   - component: {fileID: 3201387}
   m_Layer: 0
-  m_Name: Square B3 to A3
+  m_Name: Square A3 to A3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18602,7 +18602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa68b50eb5a8c04f93d785c0f69702b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapBoundry: {fileID: 616717250}
+  mapBoundry: {fileID: 1418671652}
 --- !u!1001 &5850965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18683,6 +18683,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 498578957
       objectReference: {fileID: 0}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: DOL-003 GameCube Controller
@@ -18691,6 +18695,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e6f3b160133cd1a419174f64a6f006ef, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19188,10 +19196,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2032998008, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 33
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: BEE-009 JoyCon2 Grip
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 40bcc4a867f78da4f850716a08cbb1f8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20110,6 +20126,97 @@ PolygonCollider2D:
       - {x: 1.3833332, y: -5.5729895}
       - {x: 4.5565023, y: -5.5760937}
   m_UseDelaunayMesh: 0
+--- !u!1 &233355877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233355878}
+  - component: {fileID: 233355880}
+  - component: {fileID: 233355879}
+  m_Layer: 0
+  m_Name: 'collectionRoom '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233355878
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233355877}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.43, y: 8.17, z: 0.038428288}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &233355879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233355877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b980f156e1ddeb4ab197c356ad88cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: Collection Room
+--- !u!61 &233355880
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233355877}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &234519252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20215,6 +20322,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3121572108d4024da102cc8f30a186f, type: 3}
+--- !u!1 &235820272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+  m_PrefabInstance: {fileID: 627430676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &238312510 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
@@ -20583,10 +20695,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -966977109, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 26
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: WUP-010 Gamepad
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 411bd1904fbff93469f977d54a2f5f9c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20718,6 +20838,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.0287008}
   m_EdgeRadius: 0
+--- !u!1 &306620832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+  m_PrefabInstance: {fileID: 825318889}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &311080200
 GameObject:
   m_ObjectHideFlags: 0
@@ -20891,6 +21016,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 498578957
       objectReference: {fileID: 0}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: BEE-008 Pro Controller
@@ -20899,6 +21028,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c646379eaa1466440a4dfffadeecdf8c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21135,10 +21268,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1132730091, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: WUP-005 Pro Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 421c71eb11607ab4c9bd6325a9e90c17, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21245,10 +21386,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 967844598, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 22
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: NTR-027 Walking Meter
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7562fb6c1e4fcf74e8427b37edcefcdf, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21440,7 +21589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832295086841825205, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584641422493049277, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -21452,7 +21601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: id
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: collectedSprite
@@ -21664,6 +21813,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 498578957
       objectReference: {fileID: 0}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: RVL-003 Wii Remote
@@ -21672,6 +21825,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ddb8c5afba64cc4c9c3968bb1ab1109, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23032,10 +23189,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2118139467, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: RVL-004 Nunchuk
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 493beb23e4514a745b1574bc0e9889cd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23230,6 +23395,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 271533663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &548329477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+  m_PrefabInstance: {fileID: 1300522681}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &566881386
 GameObject:
   m_ObjectHideFlags: 0
@@ -23242,7 +23412,7 @@ GameObject:
   - component: {fileID: 566881389}
   - component: {fileID: 566881390}
   m_Layer: 0
-  m_Name: Square A3 to B3
+  m_Name: Square B3 to A3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23320,7 +23490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa68b50eb5a8c04f93d785c0f69702b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapBoundry: {fileID: 1418671652}
+  mapBoundry: {fileID: 616717250}
 --- !u!1 &578930526 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3832295086841825205, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
@@ -23480,21 +23650,29 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 472448938, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: MGB-007 GameBoy Printer
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1709338382}
   m_SourcePrefab: {fileID: 100100000, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
 --- !u!114 &588662879 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
   m_PrefabInstance: {fileID: 588662878}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 663192752}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 806b39519eb30684583dd2c20a09d497, type: 3}
@@ -24186,6 +24364,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 498578957
       objectReference: {fileID: 0}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: NES-004 NES Controller
@@ -24194,17 +24376,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1121124870}
   m_SourcePrefab: {fileID: 100100000, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
 --- !u!114 &627430677 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
   m_PrefabInstance: {fileID: 627430676}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 235820272}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 806b39519eb30684583dd2c20a09d497, type: 3}
@@ -24456,6 +24642,11 @@ GameObject:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2318767434365764089, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
   m_PrefabInstance: {fileID: 900706472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &663192752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+  m_PrefabInstance: {fileID: 588662878}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &664528381
 GameObject:
@@ -24838,7 +25029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832295086841825205, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584641422493049277, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -24850,7 +25041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: id
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: collectedSprite
@@ -25246,10 +25437,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1586841706, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: RVL-024 Wii Wheel
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d5b85cc857a2fd048bde380d1f2d0fb1, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25861,6 +26060,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 498578957
       objectReference: {fileID: 0}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: MGB-006 GameBoy Camera
@@ -25869,17 +26072,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1769436008}
   m_SourcePrefab: {fileID: 100100000, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
 --- !u!114 &825318890 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
   m_PrefabInstance: {fileID: 825318889}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 306620832}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 806b39519eb30684583dd2c20a09d497, type: 3}
@@ -25953,10 +26160,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1483672229, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: NUS-017 64 Mouse
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 275c89f033ffd254eb00b7d5739f0f9f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26419,6 +26634,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 498578957
       objectReference: {fileID: 0}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: AGB-006 Infrared Link Adapter
@@ -26427,6 +26646,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2fd45bab29f1d2740bac41eeacf85e89, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26639,7 +26862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832295086841825205, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584641422493049277, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -26651,7 +26874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: id
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: collectedSprite
@@ -28051,10 +28274,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1580888621, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: AGB-005 Game Link Cable
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2fd45bab29f1d2740bac41eeacf85e89, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28361,6 +28592,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 498578957
       objectReference: {fileID: 0}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: SNS-013 Super Scope
@@ -28369,6 +28604,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1e81deca70a5c2645969cda7adbf65c9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28599,6 +28838,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 369346646602606927, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
   m_PrefabInstance: {fileID: 627430676}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1121124870
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235820272}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0068542e05aea3345a66d19309a19c23, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1121190196 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
@@ -28898,10 +29233,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1876132632, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: RVL-021 Wii Balance Board
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fe9ae220828299e4b8ee3e280f2dbdc3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28987,6 +29330,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 498578957
       objectReference: {fileID: 0}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: HAC-023 Leg Strap
@@ -28995,6 +29342,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8edccafca2b333c4bbc277e5f23f29c4, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29525,7 +29876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832295086841825205, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584641422493049277, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -29537,7 +29888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: id
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: collectedSprite
@@ -72595,21 +72946,29 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 773722728, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: NES-012 R.O.B.
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1300522688}
   m_SourcePrefab: {fileID: 100100000, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
 --- !u!114 &1300522682 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
   m_PrefabInstance: {fileID: 1300522681}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 548329477}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 806b39519eb30684583dd2c20a09d497, type: 3}
@@ -72620,6 +72979,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 369346646602606927, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
   m_PrefabInstance: {fileID: 1300522681}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1300522688
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548329477}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0068542e05aea3345a66d19309a19c23, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.696
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1303010646 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
@@ -72926,10 +73381,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2037034930, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: CTR-009 3DS Circle Pad Pro
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 099fc7c2ee98fa3419733115bce0f67b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -73487,10 +73950,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -961826971, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 34
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: BEE-019 Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c646379eaa1466440a4dfffadeecdf8c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -73999,7 +74470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832295086841825205, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584641422493049277, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -74011,7 +74482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: id
-      value: 4
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: collectedSprite
@@ -74770,10 +75241,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1480180405, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: NTR-019 NDS Headset
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 66b5d14351e8cda4c8ce948cad752147, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -74973,10 +75452,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 794993374, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: DOL-022 Microphone
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 286b5fb155a43f142828a4ec16046bc3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75773,10 +76260,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1778108921, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 29
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: HAC-013 Pro Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0666a15faaeaa1245ab26e2bfe38c92e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75850,10 +76345,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 429619627, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: NUS-007 64 Expansion Pack
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7f03e95652a0fe441b543dc0af96dd03, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75932,7 +76435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832295086841825205, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584641422493049277, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -75944,7 +76447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: id
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: collectedSprite
@@ -76157,10 +76660,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1626831049, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 31
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: HAC-024 PokeBall Plus
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5eb964ff9905fd24e9789a7e6d848202, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76300,6 +76811,11 @@ Transform:
   - {fileID: 190700065}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1606241530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+  m_PrefabInstance: {fileID: 2056979619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1606872969
 GameObject:
   m_ObjectHideFlags: 0
@@ -76444,7 +76960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832295086841825205, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584641422493049277, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -76456,7 +76972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: id
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: collectedSprite
@@ -76645,10 +77161,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 845838395, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: NTR-032 PokeWalker
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 92f0edcf6aac8704fb0d2087d211a433, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76849,6 +77373,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 498578957
       objectReference: {fileID: 0}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: NUS-005 64 Controller
@@ -76857,6 +77385,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7f03e95652a0fe441b543dc0af96dd03, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76930,10 +77462,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1811186840, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 23
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: CTR-012 NFC Reader/Writer
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 099fc7c2ee98fa3419733115bce0f67b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77187,7 +77727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832295086841825205, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584641422493049277, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -77464,6 +78004,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 369346646602606927, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
   m_PrefabInstance: {fileID: 588662878}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1709338382
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663192752}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a473bfcfa3de3a042b9b7d8d3d485029, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.831
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1717732686 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
@@ -77558,7 +78194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832295086841825205, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584641422493049277, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -77570,7 +78206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: id
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: collectedSprite
@@ -77908,6 +78544,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 369346646602606927, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
   m_PrefabInstance: {fileID: 825318889}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1769436008
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306620832}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e77ce3f4e4e652b489e962a975ec98ad, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1772853749 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
@@ -78627,10 +79359,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -424466675, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: WUP-017 Fit Meter
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 792784e45ee6e424db0b8bce76d2387a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78963,10 +79703,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1737642287, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: DOL-021 DK Bongos
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 56840acfeac97dd4887866f998fb42f0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79045,10 +79793,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -276050773, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 28
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: HAC-011 JoyCon Grip
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 40bcc4a867f78da4f850716a08cbb1f8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79401,10 +80157,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 262114867, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: CTR-010 3DS Stand
       objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 099fc7c2ee98fa3419733115bce0f67b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79814,21 +80578,29 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -306795399, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: NES-005 NES Zapper
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2056979624}
   m_SourcePrefab: {fileID: 100100000, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
 --- !u!114 &2056979620 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
   m_PrefabInstance: {fileID: 2056979619}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1606241530}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 806b39519eb30684583dd2c20a09d497, type: 3}
@@ -79839,6 +80611,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 369346646602606927, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
   m_PrefabInstance: {fileID: 2056979619}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &2056979624
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606241530}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0068542e05aea3345a66d19309a19c23, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2057789664
 GameObject:
   m_ObjectHideFlags: 0
@@ -80072,9 +80940,21 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2515438, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
+    - target: {fileID: 7045620805839625134, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: id
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8157830624193903754, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_Name
       value: SNS-005 SNES Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1e81deca70a5c2645969cda7adbf65c9, type: 3}
+    - target: {fileID: 8455603445300412064, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -80223,7 +81103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832295086841825205, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584641422493049277, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -80235,7 +81115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: id
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: collectedSprite
@@ -81484,3 +82364,4 @@ SceneRoots:
   - {fileID: 2057789665}
   - {fileID: 250633393}
   - {fileID: 1692082038}
+  - {fileID: 233355878}

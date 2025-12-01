@@ -17,7 +17,7 @@ public class ConsoleManager : MonoBehaviour
     void Start()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        if (CollectionTracker.get(1))
+        if (CollectionTracker.get(id))
         {
             spriteRenderer.color = new Color(0, 0.9064064f, 1);
         }

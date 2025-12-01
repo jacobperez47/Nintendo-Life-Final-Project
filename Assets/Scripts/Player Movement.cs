@@ -118,9 +118,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("Collectable"))
         {
-            other.gameObject.SetActive(false);
             other.GetComponent<Accessory_Script>().isCollected = true;
-            collectableManager.checkCount();
+            collectionSound = other.GetComponent<AudioSource>();
+            AudioClip clip = collectionSound.clip;
+            AudioSource.PlayClipAtPoint(clip, transform.position);
+            CollectionTracker.add(other.GetComponent<Accessory_Script>().id);
+            other.gameObject.SetActive(false);
+            
         }
 
         if (other.CompareTag("Console"))
