@@ -80206,7 +80206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: id
-      value: 3
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8403967377094455303, guid: 5c90f7b60988adc4fa9ccc4514af2705, type: 3}
       propertyPath: collectedSprite
