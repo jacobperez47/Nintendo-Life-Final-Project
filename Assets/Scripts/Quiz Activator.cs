@@ -8,6 +8,8 @@ public class QuizActivator : MonoBehaviour
     [TextArea] public string question;
     public string[] options = new string[4];
     public int correctAnswerIndex = 0;
+    [HideInInspector] public bool answeredCorrectly = false;
+    
 
     private bool playerInRange = false;
     public QuizController quizController;
@@ -17,7 +19,7 @@ public class QuizActivator : MonoBehaviour
     {
         if(playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            quizController.showQuiz(question, options, correctAnswerIndex);
+            ActivateQuiz();
             quizController.hidePopup();
         }
     }
@@ -28,11 +30,16 @@ public class QuizActivator : MonoBehaviour
         {
             Debug.Log("Player in range");
             playerInRange = true;
-            if (!quizController.answeredCorrectly)
+            if (!answeredCorrectly)
             {
                 quizController.showPopup();
             }
         }
+    }
+
+    public void markCorrect()
+    {
+        answeredCorrectly = true;
     }
 
     public void OnTriggerExit2D(Collider2D other)
@@ -43,5 +50,12 @@ public class QuizActivator : MonoBehaviour
             playerInRange = false;
             quizController.hidePopup();
         }
+    }
+    
+    public void ActivateQuiz()
+    {
+        quizController.SetQuizActivator(this); 
+    
+        quizController.showQuiz(question, options, correctAnswerIndex); 
     }
 }

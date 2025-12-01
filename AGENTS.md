@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Player, Water, UI, Hazzard, Ground, Wall, room switch, enemy
 - Active game object:
-  - Name: Room Transfers
+  - Name: Quiz count
   - Tag: Untagged
-  - Layer: Default
+  - Layer: UI
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

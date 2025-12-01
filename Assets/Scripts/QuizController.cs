@@ -6,22 +6,17 @@ using UnityEngine;
 
 public class QuizController : MonoBehaviour
 {
-    [HideInInspector] public bool answeredCorrectly = false;
     public TMP_Text questionText;
     public TMP_Text[] answerTexts;
     public MonoBehaviour PlayerMovement;
-    [Header("Player Detection")]
-    public GameObject interactPopup;
+    [Header("Player Detection")] public GameObject interactPopup;
 
+    private QuizActivator currentQuiz;
     private int correctAnswerIndex = 0;
     private int selectedAnswerIndex = 0;
     private bool quizActive = false;
+
     private int correctAnswerCount = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -37,32 +32,36 @@ public class QuizController : MonoBehaviour
             return;
         }
 
-        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             changeSelection(-1);
         }
-        if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             changeSelection(1);
         }
-        if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Return))
+
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Return))
         {
-            if(selectedAnswerIndex == correctAnswerIndex)
+            if (selectedAnswerIndex == correctAnswerIndex)
             {
                 correctAnswerCount++;
-                answeredCorrectly = true;
+                currentQuiz.markCorrect();
                 Debug.Log("Correct Total:" + correctAnswerCount);
-            } else
+            }
+            else
             {
                 Debug.Log("Wrong");
             }
+
             hideQuiz();
         }
     }
 
-    public void showQuiz(string question,string[] options, int correct)
+    public void showQuiz(string question, string[] options, int correct)
     {
-        if (answeredCorrectly)
+        if (currentQuiz.answeredCorrectly)
         {
             Debug.Log("Quiz has already been answered correctly.");
             return;
@@ -72,7 +71,7 @@ public class QuizController : MonoBehaviour
         gameObject.SetActive(true);
 
 
-        if(PlayerMovement != null)
+        if (PlayerMovement != null)
         {
             PlayerMovement.enabled = false;
         }
@@ -82,7 +81,7 @@ public class QuizController : MonoBehaviour
         questionText.color = Color.black;
         questionText.text = question;
 
-        for(int i = 0; i < options.Length; i++)
+        for (int i = 0; i < options.Length; i++)
         {
             answerTexts[i].text = options[i];
         }
@@ -101,7 +100,7 @@ public class QuizController : MonoBehaviour
         quizActive = false;
         gameObject.SetActive(false);
 
-        if(PlayerMovement != null)
+        if (PlayerMovement != null)
         {
             PlayerMovement.enabled = true;
         }
@@ -109,7 +108,7 @@ public class QuizController : MonoBehaviour
 
     public void hidePopup()
     {
-        if(interactPopup != null)
+        if (interactPopup != null)
         {
             interactPopup.SetActive(false);
         }
@@ -117,21 +116,31 @@ public class QuizController : MonoBehaviour
 
     public void changeSelection(int direction)
     {
-        selectedAnswerIndex = Mathf.Clamp(selectedAnswerIndex + direction, 0 , answerTexts.Length - 1);
+        selectedAnswerIndex = Mathf.Clamp(selectedAnswerIndex + direction, 0, answerTexts.Length - 1);
         updateAnswerUI();
     }
 
     public void updateAnswerUI()
     {
-        for(int i = 0; i < answerTexts.Length; i++)
+        for (int i = 0; i < answerTexts.Length; i++)
         {
-            if(i == selectedAnswerIndex)
+            if (i == selectedAnswerIndex)
             {
                 answerTexts[i].color = Color.green;
-            } else
+            }
+            else
             {
                 answerTexts[i].color = Color.black;
             }
         }
+    }
+
+    public void SetQuizActivator(QuizActivator activator)
+    {
+        currentQuiz = activator;
+    }
+    public int getAnswerCount()
+    {
+        return correctAnswerCount;
     }
 }
