@@ -79083,7 +79083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae850530077bf034f8fd91067dea8da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapBoundry: {fileID: 400743135}
+  mapBoundry: {fileID: 159241086}
   direction: 0
   movePoint: {fileID: 1514456649}
 --- !u!1 &1750899187
