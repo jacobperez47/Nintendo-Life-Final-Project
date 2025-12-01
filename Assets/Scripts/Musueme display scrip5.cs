@@ -15,6 +15,8 @@ public class CollectionDisplayScript : MonoBehaviour
 
     bool obtained = false;
 
+    public bool isConsole;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,10 +28,22 @@ public class CollectionDisplayScript : MonoBehaviour
     {
         if (!obtained)
         {
-            if (CollectionTracker.get(id))
+            if (isConsole)
             {
-                obtained = true;
-                spriteRenderer.sprite = clearSprite;
+                if (CollectionTracker.get(id))
+                {
+                    obtained = true;
+                    spriteRenderer.sprite = clearSprite;
+                }
+            }
+            else
+            {
+                if (CollectionTracker.getAccessory(id))
+                {
+                    obtained = true;
+                    spriteRenderer.sprite = clearSprite;
+                }
+                
             }
         }
     }

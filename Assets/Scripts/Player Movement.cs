@@ -122,7 +122,8 @@ public class PlayerMovement : MonoBehaviour
             collectionSound = other.GetComponent<AudioSource>();
             AudioClip clip = collectionSound.clip;
             AudioSource.PlayClipAtPoint(clip, transform.position);
-            CollectionTracker.add(other.GetComponent<Accessory_Script>().id);
+            CollectionTracker.addAccessory(other.GetComponent<Accessory_Script>().id);
+            other.GetComponent<Accessory_Script>().Collect();
             other.gameObject.SetActive(false);
             
         }

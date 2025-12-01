@@ -10,6 +10,7 @@ public class CollectableManager : MonoBehaviour
 
     public GameObject majorUnlock;
     
+    private bool isUnlocked = false;
     
     [CanBeNull]
     public List<Accessory_Script> collectables;
@@ -20,30 +21,44 @@ public class CollectableManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    { 
+    void FixedUpdate()
+    {
+        if (!isUnlocked)
+        {
+            checkCount();
+        }
     }
 
     bool checkCollectables()
     {
-        foreach (var item in collectables)
+        
+        collectables.RemoveAll(item => item == null);
+        foreach (Accessory_Script collectable in collectables)
         {
-            if (!item.isCollected)
+            if (!collectable.isCollected)
             {
                 return false;
             }
+            
         }
 
-        return true;
-    }
+        return collectables.Count == 0;    }
     
 
     public void checkCount()
     {
         if (checkCollectables())
         {
+             isUnlocked = true;
             majorUnlock.SetActive(true);
         }
+        
+    }
+    
+    public void RemoveCollectable(Accessory_Script collectedItem)
+    {
+      
+            collectables.Remove(collectedItem);
         
     }
 }

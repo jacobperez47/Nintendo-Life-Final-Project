@@ -21177,7 +21177,7 @@ Transform:
   m_GameObject: {fileID: 322665429}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.98, y: 3.05, z: 0}
+  m_LocalPosition: {x: 5.98, y: 3.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21456,7 +21456,7 @@ Transform:
   m_GameObject: {fileID: 343286047}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 38.41, y: 0, z: 0}
+  m_LocalPosition: {x: 38.44, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22471,7 +22471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapBoundry: {fileID: 1418671652}
   direction: 0
-  movePoint: {fileID: 0}
+  movePoint: {fileID: 1303845159}
 --- !u!1 &391692898
 GameObject:
   m_ObjectHideFlags: 0
@@ -22923,7 +22923,7 @@ Transform:
   m_GameObject: {fileID: 447781564}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.84, y: -0.66, z: 0}
+  m_LocalPosition: {x: -20.04, y: -0.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22974,7 +22974,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 5.9262056, y: 1.749938}
+  m_Offset: {x: 5.9262056, y: 1.7081466}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -22985,7 +22985,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.26380348, y: 1.4052196}
+  m_Size: {x: 0.26380348, y: 1.9345775}
   m_EdgeRadius: 0
 --- !u!4 &449674269 stripped
 Transform:
@@ -23833,11 +23833,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 369346646602606927, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.257244
+      value: -16.2
       objectReference: {fileID: 0}
     - target: {fileID: 369346646602606927, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -28.137075
+      value: 17.3
       objectReference: {fileID: 0}
     - target: {fileID: 369346646602606927, guid: 6b04bd0effb5b1849b3e28b395700ffe, type: 3}
       propertyPath: m_LocalPosition.z
