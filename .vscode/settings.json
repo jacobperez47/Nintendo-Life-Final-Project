@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "temp1.slnx"
+    "dotnet.defaultSolution": "Nintendo-Life-Final-Project.slnx"
 }
