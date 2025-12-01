@@ -35095,6 +35095,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -3587921173539156394, guid: 2043bbefcbb74c947bd60796d946e897, type: 3}
+      propertyPath: isConsole
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3587921173539156394, guid: 2043bbefcbb74c947bd60796d946e897, type: 3}
       propertyPath: clearSprite
       value: 
       objectReference: {fileID: -1684665026, guid: 64b9dfccddb4a475a8326c703c8850cc, type: 3}
